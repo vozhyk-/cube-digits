@@ -11,14 +11,8 @@ int num_digits(long n) {
 
 	for (digits = 0; n != 0; n /= 10)
 		++digits;
+	return digits;
 */
-/*
-	while (n != 0) {
-		++digits;
-		n /= 10;
-	}
-*/
-//	return digits;
 	return floor(log10(n)) + 1;
 }
 
@@ -27,10 +21,6 @@ int nth_digit(int n, long num) {
 	int digits = num_digits(num);
 	int digits_backwards = digits - n;
 
-/*
-	for (int i = 0; i < digits_backwards; ++i)
-		num /= 10;
-*/
 	num /= pow(10, digits_backwards);
 	return num % 10;
 }
