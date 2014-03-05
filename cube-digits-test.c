@@ -18,6 +18,7 @@ int main() {
 
 	printf("nth_digit:\n");
 	test_nth_digit(0, 1, 0);
+	test_nth_digit(1, 0, 0);
 	test_nth_digit(1, 10, 1);
 	test_nth_digit(2, 123, 2);
 	test_nth_digit(5, 1048576, 5);
