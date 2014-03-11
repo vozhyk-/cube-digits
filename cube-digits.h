@@ -6,13 +6,6 @@ int kth_cube_digit(int k);
 
 
 int num_digits(long n) {
-/*
-	int digits = 0;
-
-	for (digits = 0; n != 0; n /= 10)
-		++digits;
-	return digits;
-*/
 	return floor(log10(n)) + 1;
 }
 
