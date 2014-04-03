@@ -7,10 +7,10 @@ Compiling
 ---------
 
 ```
-gcc -std=c99 -lm -o cube-digits cube-digits.c
+make
 ```
 
 Tests:
 ```
-gcc -std=c99 -lm -o cube-digits-test cube-digits-test.c
+make test
 ```
